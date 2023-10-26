@@ -1,0 +1,23 @@
+.pixelated-container {
+  width: 400px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 5fr);
+  background-color: #e5e5e5;
+  position: relative;
+}
+
+.pixelated-square {
+  background-color: transparent;
+  animation: sparkle 1s infinite alternate;
+}
+
+@keyframes sparkle {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: black;
+  }
+}
